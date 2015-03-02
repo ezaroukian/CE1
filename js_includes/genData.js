@@ -122,6 +122,7 @@ function genShuffleSeq(FErulesList,CErulesList){
     return output;
 }
 function wrapperShuffleSeq(){
+    
     return genShuffleSeq(FErulesList,CErulesList);
 }
 
