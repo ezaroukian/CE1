@@ -110,6 +110,20 @@ function wrapper(){
     return ibexItemsList(FErulesList,CErulesList);
 }
 
+function genShuffleSeq(FErulesList,CErulesList){
+    //right now, mixing cans and ises
+    var output = "";
+    for (f=0;f<FErulesList.length;f++){
+        for (c=0;c<CErulesList.length;c++){
+            output=output+"'"+FErulesList.type+"-"+CErulesList.type+"', ";
+        }
+    }
+    return output;
+}
+function wrapperShuffleSeq(){
+    return genShuffleSeq(FErulesList,CErulesList);
+}
+
 var canRules = pairRules(feCanList,ceCanList);
 var isRules = pairRules(feIsList,ceIsList);
 var rules = canRules+isRules;
