@@ -87,10 +87,10 @@ function ibexItem(FErule,CErule){
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
     var corr = 1;
-    if (FErule.itype.substring(2,8)==CErule.itype.substring(2,8){
-        alert(FErule.itype);
-        corr = 0;
-    }
+    alert(FErule.itype.substring(2,8));
+    //if (FErule.itype.substring(2,8)==CErule.itype.substring(2,8){
+    //    corr = 0;
+    //}
     ////testing
     //alert(FErule.type+"-"+CErule.type);
     return [ [type, "Question", {"q": quest, "as": ans, "hasCorrect": corr } ] ];
