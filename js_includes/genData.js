@@ -86,9 +86,9 @@ function ibexItem(FErule,CErule){
     var type = FErule.type+"-"+CErule.type;
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
-    var corr = "No";
+    var corr = 1;
     if (FErule.type[2:8]==CErule.type[2:8]){
-        corr="Yes";
+        corr=0;
     }
     ////testing
     //alert(FErule.type+"-"+CErule.type);
