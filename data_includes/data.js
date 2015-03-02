@@ -87,6 +87,6 @@ countsForProgressBar: false,
 ["instEnd","Message", {html: { include: "intro_end.html" }},],
 //["test", "Question", {q: "Bob <font size=1>sorta</font> wanted a raise.", as: ["wanted: He didn't want it all that much.", "a raise: It was actually a bonus.", "polite reason"]}], ["filler", "Question", {q: "Sarah <b>sorta</b> tried to find a bicycle.", as: ["tried to find: She didn't put much effort into it.", "a bicycle: It was actually a tricycle.", "polite reason"]}],
 ];
-items = items.concat(exWrapper());
-items = items.concat(genWrapper());
+items = items.concat(wrapper());
+
 //alert(items);
