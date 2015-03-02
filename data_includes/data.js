@@ -21,8 +21,7 @@ var defaults = [
     leftComment: "(bad)", rightComment: "(good)"
   },
   "Question", {
-    hasCorrect: true,
-    randomOrder: true
+    randomOrder: false
   },  
   "Message", {
     hideProgressBar: true
