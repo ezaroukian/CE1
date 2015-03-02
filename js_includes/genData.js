@@ -87,7 +87,7 @@ function ibexItem(FErule,CErule){
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
     ////testing
-    //alert(quest);
+    alert(FErule.type+"-"+CErule.type);
     return [ [type, "Question", {"q": quest, "as": ans } ] ];
 }
 
