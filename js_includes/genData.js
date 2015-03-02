@@ -115,9 +115,18 @@ function genShuffleSeq(FErulesList,CErulesList){
     var output = "";
     for (f=0;f<FErulesList.length;f++){
         for (c=0;c<CErulesList.length;c++){
-            output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
+            //if they're both 'is', pair them
+            if(FErulesList[f].type[9]=="i" && CErulesList[c].type[9]=="i"){
+                output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
+            }
+            //if neither is 'is' (i.e. both have 'can'), pair them
+            else if (FErulesList[f].type[9]!="i" && CErulesList[c].type[9]!="i")
+            {
+                output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
+            }
         }
     }
+
     alert(output);
     return output;
 }
