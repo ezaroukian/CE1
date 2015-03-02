@@ -84,7 +84,7 @@ testFErule = FErulesList[0];
 testCErule = CErulesList[0];
 function ibexItem(FErule,CErule){
     var type = FErule.itype+"-"+CErule.itype;
-    var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
+    var quest = "Do the following rules CORRESPOND?<br><br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
     var corr = 1;
     if (FErule.itype.substring(2,8)==CErule.itype.substring(2,8)){
