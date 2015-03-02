@@ -64,19 +64,20 @@ var feIsList = [fe12_o_p_i, fe12_m_n_i, fe21_o_p_i, fe21_m_n_i ];
 //only want to pair ones with matching suffixes
 function pairRules(feList, ceList)
 {
-counter = 1;
-output = "";
-outputList = [];
-for (i=0; i<feList.length; i++){
-for (j=0; j<ceList.length; j++){
-output+=counter+". <br><br>"+feList[i]+"<br><br>"+ceList[j]+"<br><br>---<br><br>";
-outputList.push(feList[i]+"<br><br>"+ceList[j]+"<br><br>---<br><br>");
-counter+=1;
+    counter = 1;
+    output = "";
+    outputList = [];
+    for (i=0; i<feList.length; i++){
+        for (j=0; j<ceList.length; j++){
+            output+=counter+". <br><br>"+feList[i]+"<br><br>"+ceList[j]+"<br><br>---<br><br>";
+            outputList.push(feList[i]+"<br><br>"+ceList[j]+"<br><br>---<br><br>");
+            counter+=1;
+        }
+    }
+    return output;
+    //return outputList;
 }
-}
-return output;
-//return outputList;
-}
+
 var testCECanList = ["ce12_n_o_c", "ce12_n_o_d", "ce12_n_r_c", "ce12_n_r_d", "ce21_n_o_c", "ce21_n_o_d", "ce21_n_r_c", "ce21_n_r_d"];
 var testFECanList = ["fe12_o_p_c", "fe12_m_n_c", "fe21_o_p_c", "fe21_m_n_c" ];
 testFErule = FErulesList[1];
@@ -99,7 +100,7 @@ function ibexItemsList(FErulesList,CErulesList){
             //alert(output);
         }
     }
-    alert(output);
+    //alert(output);
     return output;
 }
 
