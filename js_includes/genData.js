@@ -88,7 +88,7 @@ function ibexItem(FErule,CErule){
     var ans = ["Yes","No"];
     ////testing
     alert(FErule.type+"-"+CErule.type);
-    return [ [type, "Question", {"q": quest, "as": ans } ] ];
+    return [type, "Question", {"q": quest, "as": ans } ];
 }
 
 function ibexItemsList(FErulesList,CErulesList){
@@ -96,7 +96,7 @@ function ibexItemsList(FErulesList,CErulesList){
     for (f=0;f<FErulesList.length;f++){
         for (c=0;c<CErulesList.length;c++){
             //alert(FErulesList[f].type+FErulesList[f].rule);
-            output = output.concat(ibexItem(FErulesList[f],CErulesList[c]));
+            output = output.push(ibexItem(FErulesList[f],CErulesList[c]));
             //alert(output);
         }
     }
@@ -105,7 +105,7 @@ function ibexItemsList(FErulesList,CErulesList){
 }
 
 function wrapper(){
-    return ibexItem(testFErule,testCErule);
+    return [ibexItem(testFErule,testCErule)];
     //return ibexItemsList(FErulesList,CErulesList);
 }
 
