@@ -82,25 +82,31 @@ var testFECanList = ["fe12_o_p_c", "fe12_m_n_c", "fe21_o_p_c", "fe21_m_n_c" ];
 testFErule = FErulesList[1];
 testCErule = CErulesList[1];
 function ibexItem(FErule,CErule){
-var type = FErule.type+"-"+CErule.type;
-var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
-var ans = ["Yes","No"];
-////testing
-//alert(quest);
-return [ [type, "Question", {"q": quest, "as": ans } ] ];
+    var type = FErule.type+"-"+CErule.type;
+    var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
+    var ans = ["Yes","No"];
+    ////testing
+    //alert(quest);
+    return [ [type, "Question", {"q": quest, "as": ans } ] ];
 }
+
 function ibexItemsList(FErulesList,CErulesList){
-output = [];
-for (f=0;f<FErulesList.length;f++){
-for (c=0;c<CErulesList.length;c++){
-//alert(FErulesList[f].type+FErulesList[f].rule);
-output = output.concat(ibexItem(FErulesList[f],CErulesList[c]));
-//alert(output);
+    output = [];
+    for (f=0;f<FErulesList.length;f++){
+        for (c=0;c<CErulesList.length;c++){
+            //alert(FErulesList[f].type+FErulesList[f].rule);
+            output = output.concat(ibexItem(FErulesList[f],CErulesList[c]));
+            //alert(output);
+        }
+    }
+    alert(output);
+    return output;
 }
+
+function wrapper(){
+    return ibexItemsList(FErulesList,CErulesList);
 }
-alert(output);
-return output;
-}
+
 var canRules = pairRules(feCanList,ceCanList);
 var isRules = pairRules(feIsList,ceIsList);
 var rules = canRules+isRules;
@@ -114,17 +120,4 @@ document.getElementById("textDiv1").innerHTML = pairRules(feCanList,ceCanList);
 document.getElementById("textDiv2").innerHTML = pairRules(feIsList, ceIsList);
 document.getElementById("textDiv3").innerHTML = ibexItem(testFErule,testCErule);
 document.getElementById("textDiv4").innerHTML = ibexItemsList(FErulesList,CErulesList);
-
-    Status
-    API
-    Training
-    Shop
-    Blog
-    About
-
-    © 2015 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Contact
 
