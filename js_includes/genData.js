@@ -105,7 +105,7 @@ function ibexItemsList(FErulesList,CErulesList){
 }
 
 function wrapper(){
-    alert(ibexItem(testFErule,testCErule));
+    //alert(ibexItem(testFErule,testCErule));
     return ibexItem(testFErule,testCErule);
     //return ibexItemsList(FErulesList,CErulesList);
 }
