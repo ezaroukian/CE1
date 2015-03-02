@@ -105,7 +105,8 @@ function ibexItemsList(FErulesList,CErulesList){
 }
 
 function wrapper(){
-    return ibexItemsList(FErulesList,CErulesList);
+    return ibexItem(testFErule,testCErule);
+    //return ibexItemsList(FErulesList,CErulesList);
 }
 
 var canRules = pairRules(feCanList,ceCanList);
