@@ -86,9 +86,13 @@ function ibexItem(FErule,CErule){
     var type = FErule.type+"-"+CErule.type;
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
+    var corr = "No";
+    if (FErule.type[2:8]==CErule.type[2:8]){
+        corr="Yes";
+    }
     ////testing
     //alert(FErule.type+"-"+CErule.type);
-    return [ [type, "Question", {"q": quest, "as": ans } ] ];
+    return [ [type, "Question", {"q": quest, "as": ans, "hasCorrect": corr } ] ];
 }
 
 function ibexItemsList(FErulesList,CErulesList){
