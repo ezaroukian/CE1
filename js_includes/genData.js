@@ -115,7 +115,7 @@ function genShuffleSeq(FErulesList,CErulesList){
     var output = "";
     for (f=0;f<FErulesList.length;f++){
         for (c=0;c<CErulesList.length;c++){
-            output=output+'"'+FErulesList.type+"-"+CErulesList.type+'", ';
+            output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
         }
     }
     alert(output);
