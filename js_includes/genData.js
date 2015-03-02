@@ -80,8 +80,8 @@ function pairRules(feList, ceList)
 
 var testCECanList = ["ce12_n_o_c", "ce12_n_o_d", "ce12_n_r_c", "ce12_n_r_d", "ce21_n_o_c", "ce21_n_o_d", "ce21_n_r_c", "ce21_n_r_d"];
 var testFECanList = ["fe12_o_p_c", "fe12_m_n_c", "fe21_o_p_c", "fe21_m_n_c" ];
-testFErule = FErulesList[1];
-testCErule = CErulesList[1];
+testFErule = FErulesList[0];
+testCErule = CErulesList[0];
 function ibexItem(FErule,CErule){
     var type = FErule.type+"-"+CErule.type;
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
