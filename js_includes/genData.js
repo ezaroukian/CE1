@@ -17,22 +17,22 @@ var ce21_p_o_i = "if ( the person P lives in the country C ) and ( the person P1
 var ce21_p_r_i = "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is the person P ).";
 //CE rules as a list
 var CErulesList = [
-{type: "ce12_n_o_c", rule : "if ( the person P lives in the country C ) and ( the country C1 cannot be the country C ) then ( the person P cannot live in the country C1 ). "},
-{type: "ce12_n_o_i", rule : "if ( the person P lives in the country C ) and ( the country C1 is not the country C ) then ( the person P does not live in the country C1 ). "},
-{type: "ce12_n_o_d", rule : "if ( the person P lives in the country C ) and ( there is a country named C1 that is different from the country C ) then ( the person P cannot live in the country C1 ). "},
-{type: "ce12_n_r_c", rule : "if ( the country C1 cannot be the country C ) and ( the person P lives in the country C ) then ( the person P cannot live in the country C1 ). "},
-{type: "ce12_n_r_i", rule : "if ( the country C1 is not the country C ) and ( the person P lives in the country C ) then ( the person P does not live in the country C1 ). "},
-{type: "ce12_n_r_d", rule : "if ( there is a country named C1 that is different to the country C ) and ( the person P lives in the country C ) then ( the person P cannot live in the country C1 ). "},
-{type: "ce12_p_o_i", rule : "if ( the person P lives in the country C ) and ( the person P lives in the country C1 ) then ( the country C1 is the country C )."},
-{type: "ce12_p_r_i", rule : "if ( the person P lives in the country C1 ) and ( the person P lives in the country C ) then ( the country C1 is the country C )."},
-{type: "ce21_n_o_c", rule : "if ( the person P lives in the country C ) and ( the person P1 cannot be the person P ) then ( the person P1 cannot live in the country C ). "},
-{type: "ce21_n_o_i", rule : "if ( the person P lives in the country C ) and ( the person P1 is not the person P ) then ( the person P1 does not live in the country C ). "},
-{type: "ce21_n_o_d", rule : "if ( the person P lives in the country C ) and ( there is a person named P1 that is different to the person P ) then ( the person P1 cannot live in the country C ). "},
-{type: "ce21_n_r_c", rule : "if ( the person P1 cannot be the person P ) and ( the person P lives in the country C ) then ( the person P1 cannot live in the country C ). "},
-{type: "ce21_n_r_i", rule : "if ( the person P1 is not be the person P ) and ( the person P lives in the country C ) then ( the person P1 does not live in the country C ). "},
-{type: "ce21_n_r_d", rule : "if ( there is a person named P1 that is different to the person P ) and ( the person P lives in the country C ) then ( the person P1 cannot live in the country C ). "},
-{type: "ce21_p_o_i", rule : "if ( the person P lives in the country C ) and ( the person P1 lives in the country C ) then ( the person P1 is the person P )."},
-{type: "ce21_p_r_i", rule : "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is the person P )."}
+{itype: "ce12_n_o_c", rule : "if ( the person P lives in the country C ) and ( the country C1 cannot be the country C ) then ( the person P cannot live in the country C1 ). "},
+{itype: "ce12_n_o_i", rule : "if ( the person P lives in the country C ) and ( the country C1 is not the country C ) then ( the person P does not live in the country C1 ). "},
+{itype: "ce12_n_o_d", rule : "if ( the person P lives in the country C ) and ( there is a country named C1 that is different from the country C ) then ( the person P cannot live in the country C1 ). "},
+{itype: "ce12_n_r_c", rule : "if ( the country C1 cannot be the country C ) and ( the person P lives in the country C ) then ( the person P cannot live in the country C1 ). "},
+{itype: "ce12_n_r_i", rule : "if ( the country C1 is not the country C ) and ( the person P lives in the country C ) then ( the person P does not live in the country C1 ). "},
+{itype: "ce12_n_r_d", rule : "if ( there is a country named C1 that is different to the country C ) and ( the person P lives in the country C ) then ( the person P cannot live in the country C1 ). "},
+{itype: "ce12_p_o_i", rule : "if ( the person P lives in the country C ) and ( the person P lives in the country C1 ) then ( the country C1 is the country C )."},
+{itype: "ce12_p_r_i", rule : "if ( the person P lives in the country C1 ) and ( the person P lives in the country C ) then ( the country C1 is the country C )."},
+{itype: "ce21_n_o_c", rule : "if ( the person P lives in the country C ) and ( the person P1 cannot be the person P ) then ( the person P1 cannot live in the country C ). "},
+{itype: "ce21_n_o_i", rule : "if ( the person P lives in the country C ) and ( the person P1 is not the person P ) then ( the person P1 does not live in the country C ). "},
+{itype: "ce21_n_o_d", rule : "if ( the person P lives in the country C ) and ( there is a person named P1 that is different to the person P ) then ( the person P1 cannot live in the country C ). "},
+{itype: "ce21_n_r_c", rule : "if ( the person P1 cannot be the person P ) and ( the person P lives in the country C ) then ( the person P1 cannot live in the country C ). "},
+{itype: "ce21_n_r_i", rule : "if ( the person P1 is not be the person P ) and ( the person P lives in the country C ) then ( the person P1 does not live in the country C ). "},
+{itype: "ce21_n_r_d", rule : "if ( there is a person named P1 that is different to the person P ) and ( the person P lives in the country C ) then ( the person P1 cannot live in the country C ). "},
+{itype: "ce21_p_o_i", rule : "if ( the person P lives in the country C ) and ( the person P1 lives in the country C ) then ( the person P1 is the person P )."},
+{itype: "ce21_p_r_i", rule : "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is the person P )."}
 ];
 //FE riles (do, can, only, more)
 var fe12_o_p_c = "A given person can only live in one country." ;
@@ -45,14 +45,14 @@ var fe21_o_p_i = "Only one person lives in a given country.";
 var fe21_m_n_i = "It's not the case that more than one person lives in a given country.";
 //FE rules as a list
 var FErulesList = [
-{type: "fe12_o_p_c", rule : "A given person can only live in one country."},
-{type: "fe12_m_n_c", rule : "It's not the case that a given person can live in more than one country."},
-{type: "fe21_o_p_c", rule : "Only one person can live in a given country."},
-{type: "fe21_m_n_c", rule : "It's not the case that more than one person can live in a given country."},
-{type: "fe12_o_p_i", rule : "A given person only lives in one country."},
-{type: "fe12_m_n_i", rule : "It's not the case that a given person lives in more than one country."},
-{type: "fe21_o_p_i", rule : "Only one person lives in a given country."},
-{type: "fe21_m_n_i", rule : "It's not the case that more than one person lives in a given country."},
+{itype: "fe12_o_p_c", rule : "A given person can only live in one country."},
+{itype: "fe12_m_n_c", rule : "It's not the case that a given person can live in more than one country."},
+{itype: "fe21_o_p_c", rule : "Only one person can live in a given country."},
+{itype: "fe21_m_n_c", rule : "It's not the case that more than one person can live in a given country."},
+{itype: "fe12_o_p_i", rule : "A given person only lives in one country."},
+{itype: "fe12_m_n_i", rule : "It's not the case that a given person lives in more than one country."},
+{itype: "fe21_o_p_i", rule : "Only one person lives in a given country."},
+{itype: "fe21_m_n_i", rule : "It's not the case that more than one person lives in a given country."},
 ];
 var ceCanList = [ce12_n_o_c, ce12_n_o_d, ce12_n_r_c, ce12_n_r_d, ce21_n_o_c, ce21_n_o_d, ce21_n_r_c, ce21_n_r_d ];
 var ceIsList = [ce12_n_o_i, ce12_n_r_i, ce12_p_o_i, ce12_p_r_i, ce21_n_o_i, ce21_n_r_i, ce21_p_o_i, ce21_p_r_i ];
@@ -83,11 +83,11 @@ var testFECanList = ["fe12_o_p_c", "fe12_m_n_c", "fe21_o_p_c", "fe21_m_n_c" ];
 testFErule = FErulesList[0];
 testCErule = CErulesList[0];
 function ibexItem(FErule,CErule){
-    var type = FErule.type+"-"+CErule.type;
+    var type = FErule.itype+"-"+CErule.itype;
     var quest = "Do the following rules CORRESPOND?<br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
     var ans = ["Yes","No"];
     var corr = 1;
-    if (FErule.type[2:8]==CErule.type[2:8]){
+    if (FErule.itype[2:8]==CErule.itype[2:8]){
         corr = 0;
     }
     ////testing
@@ -120,13 +120,13 @@ function genShuffleSeq(FErulesList,CErulesList){
     for (f=0;f<FErulesList.length;f++){
         for (c=0;c<CErulesList.length;c++){
             //if they're both 'is', pair them
-            if(FErulesList[f].type[9]=="i" && CErulesList[c].type[9]=="i"){
-                output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
+            if(FErulesList[f].itype[9]=="i" && CErulesList[c].itype[9]=="i"){
+                output=output+'"'+FErulesList[f].itype+"-"+CErulesList[c].itype+'", ';
             }
             //if neither is 'is' (i.e. both have 'can'), pair them
-            else if (FErulesList[f].type[9]!="i" && CErulesList[c].type[9]!="i")
+            else if (FErulesList[f].itype[9]!="i" && CErulesList[c].itype[9]!="i")
             {
-                output=output+'"'+FErulesList[f].type+"-"+CErulesList[c].type+'", ';
+                output=output+'"'+FErulesList[f].itype+"-"+CErulesList[c].itype+'", ';
             }
         }
     }
