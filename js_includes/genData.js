@@ -32,7 +32,31 @@ var CErulesList = [
 {itype: "ce21_n_r_i", rule : "if ( the person P1 is not be the person P ) and ( the person P lives in the country C ) then ( the person P1 does not live in the country C ). "},
 {itype: "ce21_n_r_d", rule : "if ( there is a person named P1 that is different to the person P ) and ( the person P lives in the country C ) then ( the person P1 cannot live in the country C ). "},
 {itype: "ce21_p_o_i", rule : "if ( the person P lives in the country C ) and ( the person P1 lives in the country C ) then ( the person P1 is the person P )."},
-{itype: "ce21_p_r_i", rule : "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is the person P )."}
+{itype: "ce21_p_r_i", rule : "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is the person P )."},
+
+{itype: "ce12_fn_o_c", rule: "if ( the person P lives in the country C ) and ( the country C1 cannot be the country C ) then ( the person P lives in the country C1 ). "},
+{itype: "ce12_fn_o_d", rule: "if ( the person P lives in the country C ) and ( there is a country named C1 that is different to the country C ) then ( the person P lives in the country C1 ). "},
+{itype: "ce12_fn_o_i", rule: "if ( the person P lives in the country C ) and ( the country C1 is not the country C ) then ( the person P lives in the country C1 ). "},
+{itype: "ce12_fn_r_c", rule: "if ( the country C1 cannot be the country C ) and ( the person P lives in the country C ) then ( the person P lives in the country C1 ). "},
+{itype: "ce12_fn_r_d", rule: "if ( there is a country named C1 that is different to the country C ) and ( the person P lives in the country C ) then ( the person P lives in the country C1 ). "},
+{itype: "ce12_fn_r_i", rule: "if ( the country C1 is not the country C ) and ( the person P lives in the country C ) then ( the person P lives in the country C1 ). "},
+
+//{itype: "ce12_fp_o_c", rule: "if ( the person P lives in the country C ) and ( the person P lives in the country C1 ) then ( the country C cannot be the country C1 ). "},
+{itype: "ce12_fp_o_i", rule: "if ( the person P lives in the country C ) and ( the person P lives in the country C1 ) then ( the country C1 is not the country C ). "},
+{itype: "ce12_fp_r_i", rule: "if ( the person P lives in the country C1 ) and ( the person P lives in the country C ) then ( the country C1 is not the country C ). "},
+
+
+{itype: "ce21_fn_o_c", rule: "if ( the person P lives in the country C ) and ( the person P1 cannot be the person P ) then ( the person P1 lives in the country C ). "},
+{itype: "ce21_fn_o_d", rule: "if ( the person P lives in the country C ) and ( there is a person named P1 that is different to the person P ) then ( the person P1 lives in the country C ). "},
+{itype: "ce21_fn_o_i", rule: "if ( the person P lives in the country C ) and ( the person P1 is not the person P ) then ( the person P1 lives in the country C ). "},
+{itype: "ce21_fn_r_c", rule: "if ( the person P1 cannot be the person P ) and ( the person P lives in the country C ) then ( the person P1 lives in the country C ). "},
+{itype: "ce21_fn_r_d", rule: "if ( there is a person named P1 that is different to the person P ) and ( the person P lives in the country C ) then ( the person P1 lives in the country C ). "},
+{itype: "ce21_fn_r_i", rule: "if ( the person P1 is not the person P ) and ( the person P lives in the country C ) then ( the person P1 lives in the country C ). "},
+
+{itype: "ce21_fp_o_i", rule: "if ( the person P lives in the country C ) and ( the person P1 lives in the country C ) then ( the person P1 is not the person P ). "},
+{itype: "ce21_fp_r_i", rule: "if ( the person P1 lives in the country C ) and ( the person P lives in the country C ) then ( the person P1 is not the person P ). "},
+
+
 ];
 //FE riles (do, can, only, more)
 var fe12_o_p_c = "A given person can only live in one country." ;
@@ -53,6 +77,12 @@ var FErulesList = [
 {itype: "fe12_m_n_i", rule : "It's not the case that a given person lives in more than one country."},
 {itype: "fe21_o_p_i", rule : "Only one person lives in a given country."},
 {itype: "fe21_m_n_i", rule : "It's not the case that more than one person lives in a given country."},
+
+{itype: "fe12_e_pf_i", rule : "A given person lives in every country."},
+{itype: "fe21_e_pf_i", rule : "Every person lives in a given country."},
+{itype: "fe12_e_nf_c", rule : "It's not the case that a given person can live in every country."},
+{itype: "fe21_e_nf_c", rule : "It's not the case that every person can live in a given country."},
+
 ];
 var ceCanList = [ce12_n_o_c, ce12_n_o_d, ce12_n_r_c, ce12_n_r_d, ce21_n_o_c, ce21_n_o_d, ce21_n_r_c, ce21_n_r_d ];
 var ceIsList = [ce12_n_o_i, ce12_n_r_i, ce12_p_o_i, ce12_p_r_i, ce21_n_o_i, ce21_n_r_i, ce21_p_o_i, ce21_p_r_i ];
