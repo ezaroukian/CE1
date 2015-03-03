@@ -114,7 +114,8 @@ testFErule = FErulesList[0];
 testCErule = CErulesList[0];
 function ibexItem(FErule,CErule){
     var type = FErule.itype+"-"+CErule.itype;
-    var quest = "Do the following rules CORRESPOND?<br><br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>";
+    var testCases = "<br><br>Test cases: <br> John lives in France and in Spain.<br>John and Mary live in France.<br><br>";
+    var quest = "Do the following rules CORRESPOND?<br><br><br>"+FErule.rule+"<br><br>"+CErule.rule+"<br>"+testCases;
     var ans = ["Yes","No"];
     var corr = 1;
     if (FErule.itype.substring(2,4)==CErule.itype.substring(2,4)){
