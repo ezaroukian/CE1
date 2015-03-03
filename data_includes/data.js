@@ -11,7 +11,7 @@ var shuffleSequence = seq(rshuffle(
   "fe21_m_n_c-ce12_n_o_c", "fe21_m_n_c-ce21_n_r_d", "fe21_m_n_i-ce12_p_r_i", "fe21_m_n_i-ce21_n_o_i",
   "fe21_o_p_c-ce21_n_r_c", "fe21_o_p_c-ce12_n_o_d", "fe21_o_p_i-ce12_n_o_i", "fe21_o_p_i-ce21_p_r_i",
   "fe12_e_pf_i-ce12_fn_o_c","fe12_e_pf_i-ce21_fn_r_i", "fe12_e_pf_i-ce21_fn_r_d","fe12_e_pf_i-ce12_fn_o_i",
-  "fe21_e_pf_i-ce12_fn_r_c","fe21_e_pf_i-ce21_fn_o_d","fe21_e_pf_i-ce12_fn_r_i","fe21_e_pf_i-ce21_fn_o_i",
+  "fe21_e_pf_i-ce12_fn_r_c","fe21_e_pf_i-ce21_fn_o_d", "fe21_e_pf_i-ce12_fn_r_i","fe21_e_pf_i-ce21_fn_o_i",
   //"fe12_e_nf_c-ce12_fp_o_i","fe12_e_nf_c-ce21_fn_r_c",
   //"fe21_e_nf_c-ce12_fn_r_i","fe21_e_nf_c-ce21_fn_o_d"
   ));
